@@ -9,10 +9,10 @@ import aalpy.learning_algs
 
 
 def make_universal_automaton(alphabet):
-    return dfa.DFA( start=0,
-        inputs=alphabet,
-        label=lambda s: True,
-        transition=lambda s, c: s)
+    return dfa.DFA(start=0,
+                   inputs=alphabet,
+                   label=lambda s: True,
+                   transition=lambda s, c: s)
 
 
 class CacheSUL(aalpy.base.SUL):
@@ -87,7 +87,8 @@ class CacheSUL(aalpy.base.SUL):
 
 
 def learn_automaton_with_lstar(secret_automaton, filter_automaton):
-    return lstar.learn_dfa(secret_automaton.inputs, secret_automaton.label, lstar.iterative_deeping_ce(secret_automaton.label, depth=10))
+    return lstar.learn_dfa(secret_automaton.inputs, secret_automaton.label,
+                           lstar.iterative_deeping_ce(secret_automaton.label, depth=10))
 
 
 def _create_aalpy_dfa_from_automaton(automaton):
@@ -100,7 +101,7 @@ def _aalpy2dict(aalpy_dfa):
     for state in aalpy_dfa.states:
         transitions = dict()
         for i, dest in state.transitions.items():
-             transitions[i] = dest.state_id
+            transitions[i] = dest.state_id
         result[state.state_id] = (state.is_accepting, transitions)
     return result
 
@@ -133,8 +134,9 @@ class _FilterDfaSUL(aalpy.base.SUL):
             if len(positives) == 0:
                 return filter_res
             last_positive = positives[-1]
-            dfa_res = self._system_under_learning.query(word[:last_positive+1])
-            res = [x & y for x, y in zip(filter_res[:last_positive+1], dfa_res)] + [False] * (len(word) - last_positive - 1)
+            dfa_res = self._system_under_learning.query(word[:last_positive + 1])
+            res = [x & y for x, y in zip(filter_res[:last_positive + 1], dfa_res)] + [False] * (
+                        len(word) - last_positive - 1)
             assert len(res) == len(word), f"Expected {len(res)} == {len(word)}"
             return res
         else:
@@ -197,16 +199,13 @@ class _EagerIntersectionDfaSUL(aalpy.base.SUL):
         for sul in self._suls:
             self._num_eq_steps += 1
             res &= sul.step(token)
-        #print(f"token: {token} yields {res}")
         return res
 
     def query(self, word: tuple) -> list:
-        #print(word)
-        res = [True] * max(len(word),1)
+        res = [True] * max(len(word), 1)
         for sul in self._suls:
             new_res = sul.query(word)
             res = [x & y for x, y in zip(res, new_res)]
-        #print(f"yields {res}")
         return res
 
     @property
@@ -228,12 +227,12 @@ class _IntersectionDfaSUL(aalpy.base.SUL):
         if cache_suls:
             self._suls = [CacheSUL(sul) for sul in self._suls]
         self._use_membership_up_to = use_membership_up_to
-        self._cached_steps = [ [] for _ in range(len(self._suls)) ]
+        self._cached_steps = [[] for _ in range(len(self._suls))]
         assert len(self._cached_steps) == len(self._suls)
         self._num_eq_steps = 0
 
     def pre(self):
-        self._cached_steps = [ [] for _ in range(len(self._suls)) ]
+        self._cached_steps = [[] for _ in range(len(self._suls))]
         for sul in self._suls:
             sul.pre()
 
@@ -264,7 +263,7 @@ class _IntersectionDfaSUL(aalpy.base.SUL):
                 if len(positives) == 0:
                     return [False] * len(word)
                 res = [x & y for x, y in zip(res[:last_positive + 1], new_res)] + [False] * (
-                            len(word) - last_positive - 1)
+                        len(word) - last_positive - 1)
                 last_positive = positives[-1]
                 assert len(res) == len(word), f"Expected {len(res)} == {len(word)} "
             return res
@@ -320,7 +319,8 @@ class DFALearner:
 
     def run(self, aut, filter=None, lazy=True):
         if self._library == "aalpy":
-            dfa, data = learn_automaton_with_aalpy(aut, filter, use_cache=self._use_cache, cache_sul=self._cache_sul_queries, lazy=lazy)
+            dfa, data = learn_automaton_with_aalpy(aut, filter, use_cache=self._use_cache,
+                                                   cache_sul=self._cache_sul_queries, lazy=lazy)
             self._data.append(data)
             return dfa
         elif self._library == "lstar":
@@ -332,13 +332,13 @@ class DFALearner:
     @property
     def stats(self):
         return {
-                "queries_learning": sum([data["queries_learning"] for data in self._data]),
-                 "queries_eq_oracle": sum([data["queries_eq_oracle"] for data in self._data]),
-                 "steps_learning": sum([data["steps_learning"] for data in self._data]),
-                 "learning_rounds": sum([data["learning_rounds"] for data in self._data]),
-                 "largest_automaton": max([data["automaton_size"] for data in self._data]),
-                 "sul_steps": sum([data["sul_steps"] for data in self._data])
-                  }
+            "queries_learning": sum([data["queries_learning"] for data in self._data]),
+            "queries_eq_oracle": sum([data["queries_eq_oracle"] for data in self._data]),
+            "steps_learning": sum([data["steps_learning"] for data in self._data]),
+            "learning_rounds": sum([data["learning_rounds"] for data in self._data]),
+            "largest_automaton": max([data["automaton_size"] for data in self._data]),
+            "sul_steps": sum([data["sul_steps"] for data in self._data])
+        }
 
 
 def learn_automaton_with_aalpy(secret_automaton, filter_automaton=None, use_cache=False, cache_sul=True, lazy=True):
@@ -367,7 +367,8 @@ def learn_automaton_with_aalpy(secret_automaton, filter_automaton=None, use_cach
         oracle = _FilteredEquivalenceOracle(alphabet, filter_automaton, sul_dfa)
 
     learned_dfa, data = aalpy.learning_algs.run_Lstar(alphabet, sul_dfa, oracle, automaton_type='dfa',
-                            cache_and_non_det_check=use_cache, cex_processing='rs', return_data=True, print_level=0)
+                                                      cache_and_non_det_check=use_cache, cex_processing='rs',
+                                                      return_data=True, print_level=0)
     if hasattr(sul_dfa, "num_eq_steps"):
         data["sul_steps"] = sul_dfa.num_eq_steps
     else:
@@ -387,7 +388,8 @@ class _AbstractIntersectionLearner():
         raise NotImplementedError("This abstract learner has not been implemented!")
 
     def _intersect_automata(self, auts):
-        res = auts[0]; [res := res & x for x in auts[1:]]
+        res = auts[0];
+        [res := res & x for x in auts[1:]]
         return dfa.utils.minimize(res)
 
     def _learn_automaton(self, aut, filter=None):
@@ -432,7 +434,8 @@ class LazyWordByWordLearner(_AbstractIntersectionLearner):
 
 class MachineByMachineLearner(_AbstractIntersectionLearner):
     def run(self):
-        hyp = make_universal_automaton(self._alphabet); [hyp := self._learn_automaton(x, filter=hyp) for x in self._automata]
+        hyp = make_universal_automaton(self._alphabet);
+        [hyp := self._learn_automaton(x, filter=hyp) for x in self._automata]
         return dfa.utils.minimize(hyp)
 
     def __str__(self):
