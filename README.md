@@ -5,16 +5,16 @@ The initial version of Lcap is based on:
 
 - Sebastian Junges and Jurriaan Rot, Learning Language Intersections, 2022
 
-Currently, Lcap is build on top of two libraries:
+Currently, Lcap is built on top of two libraries:
 
-- dfa
+- dfa / lstar
 - aalpy
 
 ## Installing Lcap
 
 Run 
 
-```pip install dfa aalpy click```
+```pip install dfa lstar aalpy click```
 
 
 ## Running experiments
@@ -29,12 +29,18 @@ These files contain tables in latex that can be compiled into pdf.
 
 To run all benchmarks once, run 
 ```
-python lcap-experiment.py -b mod -b imod -l indep -l wbw -l mbm
+python lcap-experiments.py -b mod -b imod -l indep -l wbw -l mbm
 ```
+This tells the script to run 
+- the benchmark-sets `mod` and `imod` (via the `-b` option), and
+- the learners 
+  + independent `indep`,
+  + word-by-word `wbw`, 
+  + machine-by-machine `mbm`
 
 As the learning algorithms are randomized, experiments should be run multiple times:
 ```
-python lcap-experiment.py -n 20 -b mod -b imod -l indep -l wbw -l mbm
+python lcap-experiments.py -n 20 -b mod -b imod -l indep -l wbw -l mbm
 ```
 
 You can also change the seed `--seed X` or select only a subset of learners (by removing some `-l` options) and benchmarks (by removing some `-b` options).
