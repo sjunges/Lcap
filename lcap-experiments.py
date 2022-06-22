@@ -171,11 +171,11 @@ def main(seed, repetitions, benchmark, learner):
     use_these_learners = [LEARNERS[l] for l in learner]
     for b in benchmark:
         if b == "mod":
-            runner = BenchmarkRunner("table1.tex", repetitions, use_these_learners)
+            runner = BenchmarkRunner("results/experiments2206/table1.tex", repetitions, use_these_learners)
             runner.benchmark_list(_create_mod_benchmarks())
             runner.close()
         if b == "imod":
-            runner = BenchmarkRunner("table2.tex", repetitions, use_these_learners)
+            runner = BenchmarkRunner("results/experiments2206/table2.tex", repetitions, use_these_learners)
             runner.benchmark_list(_create_imod_benchmarks())
             runner.close()
 
