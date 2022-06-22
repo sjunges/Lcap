@@ -14,8 +14,11 @@ Currently, Lcap is built on top of two libraries:
 
 Run 
 
-```pip install dfa lstar aalpy click```
+First, download this repository (or unpack the archive). Then install dependencies with:
 
+```pip install -r requirements.txt```
+
+Note: We do not currently provide an installation package.
 
 ## Running experiments
 
