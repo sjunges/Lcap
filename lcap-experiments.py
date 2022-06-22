@@ -163,7 +163,7 @@ def _create_imod_benchmarks():
 
 @click.command()
 @click.option('--seed', default=0, help='Random seed')
-@click.option('--repetitions', '-n', default=20, help="How often to repeat each benchmark")
+@click.option('--repetitions', '-n', default=1, help="How often to repeat each benchmark")
 @click.option('--benchmark', '-b', multiple=True, type=click.Choice(["mod", "imod"]), required=True)
 @click.option('--learner', '-l', multiple=True, type=click.Choice(["indep", "wbw", "mbm"]), required=True)
 def main(seed, repetitions, benchmark, learner):
