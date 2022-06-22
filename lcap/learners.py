@@ -288,55 +288,6 @@ class _IntersectionDfaSUL(aalpy.base.SUL):
         return self._num_eq_steps
 
 
-def find_subset_counterexample(smaller, bigger):
-    """
-    Returns None if smaller ⊆ bigger; if not, returns x ∈ smaller - bigger.
-    (Faster version than in the DFA lib)
-    """
-    result = find_word(~bigger & smaller)
-    assert result is None or (smaller.label(result) and not bigger.label(result))
-    return result
-
-
-def find_word(lang: dfa.DFA):
-    """Returns a word in the language of DFA or None if language empty.
-    (Faster version than in the DFA lib)
-    """
-    return find_accepting_word(lang)
-
-
-def find_accepting_word(automaton: dfa.DFA):
-    """
-    DFS implementation of finding a shortest accepting word.
-    :param automaton:
-    :return:
-    """
-    # Make search deterministic.
-    try:
-        inputs = sorted(automaton.inputs)  # Try to respect inherent order.
-    except TypeError:
-        inputs = sorted(automaton.inputs, key=id)  # Fall by to object ids.
-
-    visited = set()
-    word = []
-
-    def _find_accepting_word_recursive(state):
-        if automaton._label(state):
-            return True
-        visited.add(state)
-        for i in inputs:
-            next_state = automaton._transition(state, i)
-            if next_state not in visited:
-                word.append(i)
-                if _find_accepting_word_recursive(next_state):
-                    return True
-                word.pop()
-    if _find_accepting_word_recursive(automaton.start):
-        return word
-    else:
-        return None
-
-
 class _FilteredEquivalenceOracle(aalpy.base.Oracle):
     def __init__(self, alphabet, filter_automaton, sul, oracle_type=aalpy.oracles.RandomWMethodEqOracle):
         self._filter_automaton = filter_automaton
@@ -345,7 +296,7 @@ class _FilteredEquivalenceOracle(aalpy.base.Oracle):
 
     def find_cex(self, hypothesis):
         hypothesis_dfa = _create_dfa_from_aalpy_automaton(hypothesis)
-        cex = find_subset_counterexample(hypothesis_dfa, self._filter_automaton)
+        cex = dfa.utils.find_subset_counterexample(hypothesis_dfa, self._filter_automaton)
         if cex is None:
             return self._oracle.find_cex(hypothesis)
         else:
