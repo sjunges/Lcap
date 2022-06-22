@@ -154,10 +154,10 @@ def _create_imod_benchmarks():
         test_case = [_make_imod_dfa(mv) for mv in modulo_values]
         return Benchmark(identifier, test_case)
 
-    descriptions = [[2], [30], [2, 3, 5], [2, 3, 5, 6, 10], [2,3,5,6,10,15,30],
+    descriptions = [[30], [2, 3, 5], [2, 3, 5, 6, 10], [2,3,5,6,10,15,30],
                     list(reversed([2, 3, 5, 6, 10, 15, 30])), list(reversed([2, 3, 5, 6, 10, 15])),
-                    [3, 8], [3, 6, 8, 12, 18], [3, 6, 8, 12, 16, 18, 21], [8], [16, 8],
-                    [8, 16], [32, 24, 16, 8], [8, 16, 24, 32], [8, 4, 2], list(reversed([8, 4, 2])),
+                    [8], [16, 8], [8, 16], [32, 24, 16, 8], [8, 16, 24, 32],
+                    [2], [8, 4, 2], list(reversed([8, 4, 2])),
                     [32, 16, 8, 4, 2], list(reversed([32, 16, 8, 4, 2])), [2, 10, 20], [20, 10, 2]]
     return [_create_imod_languages(description) for description in descriptions]
 

@@ -1,4 +1,4 @@
-lcap-experiments.py -n 20 -b mod -b imod -l indep -l wbw -l mbm
+python lcap-experiments.py -n 20 -b mod -b imod -l indep -l wbw -l mbm
 Running MOD(30) (1/19)
 	 Use indep
 		Run 1/20
@@ -2355,131 +2355,7 @@ Running MOD(2,4,8,16,32) (19/19)
 			{'queries_learning': 195, 'queries_eq_oracle': 620, 'steps_learning': 6198, 'learning_rounds': 9, 'largest_automaton': 32, 'sul_steps': 43964}
 		Run 20/20
 			{'queries_learning': 215, 'queries_eq_oracle': 620, 'steps_learning': 6794, 'learning_rounds': 9, 'largest_automaton': 32, 'sul_steps': 43084}
-Running IMOD(2) (1/21)
-	 Use indep
-		Run 1/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 935}
-		Run 2/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1103}
-		Run 3/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1230}
-		Run 4/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1207}
-		Run 5/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 953}
-		Run 6/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1133}
-		Run 7/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1097}
-		Run 8/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 977}
-		Run 9/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1006}
-		Run 10/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1101}
-		Run 11/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 932}
-		Run 12/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1009}
-		Run 13/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 860}
-		Run 14/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1034}
-		Run 15/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 995}
-		Run 16/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 997}
-		Run 17/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1079}
-		Run 18/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 963}
-		Run 19/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1101}
-		Run 20/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1174}
-	 Use wbw
-		Run 1/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 935}
-		Run 2/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1103}
-		Run 3/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1230}
-		Run 4/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1207}
-		Run 5/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 953}
-		Run 6/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1133}
-		Run 7/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1097}
-		Run 8/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 977}
-		Run 9/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1006}
-		Run 10/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1101}
-		Run 11/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 932}
-		Run 12/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1009}
-		Run 13/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 860}
-		Run 14/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1034}
-		Run 15/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 995}
-		Run 16/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 997}
-		Run 17/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1079}
-		Run 18/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 963}
-		Run 19/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1101}
-		Run 20/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1174}
-	 Use mbm
-		Run 1/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 935}
-		Run 2/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1103}
-		Run 3/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1230}
-		Run 4/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1207}
-		Run 5/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 953}
-		Run 6/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1133}
-		Run 7/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1097}
-		Run 8/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 977}
-		Run 9/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1006}
-		Run 10/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1101}
-		Run 11/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 932}
-		Run 12/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1009}
-		Run 13/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 860}
-		Run 14/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1034}
-		Run 15/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 995}
-		Run 16/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 997}
-		Run 17/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1079}
-		Run 18/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 963}
-		Run 19/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1101}
-		Run 20/20
-			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1174}
-Running IMOD(30) (2/21)
+Running IMOD(30) (1/18)
 	 Use indep
 		Run 1/20
 			{'queries_learning': 1676, 'queries_eq_oracle': 300, 'steps_learning': 81090, 'learning_rounds': 2, 'largest_automaton': 30, 'sul_steps': 28628}
@@ -2603,7 +2479,7 @@ Running IMOD(30) (2/21)
 			{'queries_learning': 1365, 'queries_eq_oracle': 300, 'steps_learning': 57834, 'learning_rounds': 2, 'largest_automaton': 30, 'sul_steps': 27148}
 		Run 20/20
 			{'queries_learning': 1365, 'queries_eq_oracle': 300, 'steps_learning': 59194, 'learning_rounds': 2, 'largest_automaton': 30, 'sul_steps': 26922}
-Running IMOD(2,3,5) (3/21)
+Running IMOD(2,3,5) (2/18)
 	 Use indep
 		Run 1/20
 			{'queries_learning': 73, 'queries_eq_oracle': 100, 'steps_learning': 475, 'learning_rounds': 5, 'largest_automaton': 5, 'sul_steps': 5318}
@@ -2727,7 +2603,7 @@ Running IMOD(2,3,5) (3/21)
 			{'queries_learning': 528, 'queries_eq_oracle': 380, 'steps_learning': 13954, 'learning_rounds': 10, 'largest_automaton': 30, 'sul_steps': 27462}
 		Run 20/20
 			{'queries_learning': 456, 'queries_eq_oracle': 380, 'steps_learning': 12089, 'learning_rounds': 10, 'largest_automaton': 30, 'sul_steps': 27858}
-Running IMOD(2,3,5,6,10) (4/21)
+Running IMOD(2,3,5,6,10) (3/18)
 	 Use indep
 		Run 1/20
 			{'queries_learning': 342, 'queries_eq_oracle': 260, 'steps_learning': 4873, 'learning_rounds': 9, 'largest_automaton': 10, 'sul_steps': 13822}
@@ -2851,7 +2727,7 @@ Running IMOD(2,3,5,6,10) (4/21)
 			{'queries_learning': 739, 'queries_eq_oracle': 980, 'steps_learning': 19190, 'learning_rounds': 18, 'largest_automaton': 30, 'sul_steps': 71007}
 		Run 20/20
 			{'queries_learning': 704, 'queries_eq_oracle': 980, 'steps_learning': 18370, 'learning_rounds': 18, 'largest_automaton': 30, 'sul_steps': 70162}
-Running IMOD(2,3,5,6,10,15,30) (5/21)
+Running IMOD(2,3,5,6,10,15,30) (4/18)
 	 Use indep
 		Run 1/20
 			{'queries_learning': 2532, 'queries_eq_oracle': 710, 'steps_learning': 99318, 'learning_rounds': 13, 'largest_automaton': 30, 'sul_steps': 54022}
@@ -2975,7 +2851,7 @@ Running IMOD(2,3,5,6,10,15,30) (5/21)
 			{'queries_learning': 946, 'queries_eq_oracle': 1580, 'steps_learning': 24321, 'learning_rounds': 26, 'largest_automaton': 30, 'sul_steps': 114414}
 		Run 20/20
 			{'queries_learning': 963, 'queries_eq_oracle': 1580, 'steps_learning': 24936, 'learning_rounds': 26, 'largest_automaton': 30, 'sul_steps': 112336}
-Running IMOD(30,15,10,6,5,3,2) (6/21)
+Running IMOD(30,15,10,6,5,3,2) (5/18)
 	 Use indep
 		Run 1/20
 			{'queries_learning': 2139, 'queries_eq_oracle': 710, 'steps_learning': 89395, 'learning_rounds': 13, 'largest_automaton': 30, 'sul_steps': 53156}
@@ -3099,7 +2975,7 @@ Running IMOD(30,15,10,6,5,3,2) (6/21)
 			{'queries_learning': 2925, 'queries_eq_oracle': 1800, 'steps_learning': 104518, 'learning_rounds': 24, 'largest_automaton': 30, 'sul_steps': 135895}
 		Run 20/20
 			{'queries_learning': 2731, 'queries_eq_oracle': 1800, 'steps_learning': 96586, 'learning_rounds': 24, 'largest_automaton': 30, 'sul_steps': 133330}
-Running IMOD(15,10,6,5,3,2) (7/21)
+Running IMOD(15,10,6,5,3,2) (6/18)
 	 Use indep
 		Run 1/20
 			{'queries_learning': 652, 'queries_eq_oracle': 410, 'steps_learning': 12255, 'learning_rounds': 11, 'largest_automaton': 15, 'sul_steps': 26298}
@@ -3223,379 +3099,7 @@ Running IMOD(15,10,6,5,3,2) (7/21)
 			{'queries_learning': 1589, 'queries_eq_oracle': 1500, 'steps_learning': 40492, 'learning_rounds': 22, 'largest_automaton': 30, 'sul_steps': 107325}
 		Run 20/20
 			{'queries_learning': 1810, 'queries_eq_oracle': 1500, 'steps_learning': 50529, 'learning_rounds': 22, 'largest_automaton': 30, 'sul_steps': 108163}
-Running IMOD(3,8) (8/21)
-	 Use indep
-		Run 1/20
-			{'queries_learning': 67, 'queries_eq_oracle': 110, 'steps_learning': 573, 'learning_rounds': 4, 'largest_automaton': 8, 'sul_steps': 6186}
-		Run 2/20
-			{'queries_learning': 74, 'queries_eq_oracle': 110, 'steps_learning': 624, 'learning_rounds': 4, 'largest_automaton': 8, 'sul_steps': 6212}
-		Run 3/20
-			{'queries_learning': 201, 'queries_eq_oracle': 110, 'steps_learning': 3761, 'learning_rounds': 4, 'largest_automaton': 8, 'sul_steps': 7433}
-		Run 4/20
-			{'queries_learning': 86, 'queries_eq_oracle': 110, 'steps_learning': 691, 'learning_rounds': 4, 'largest_automaton': 8, 'sul_steps': 5939}
-		Run 5/20
-			{'queries_learning': 99, 'queries_eq_oracle': 110, 'steps_learning': 991, 'learning_rounds': 4, 'largest_automaton': 8, 'sul_steps': 6569}
-		Run 6/20
-			{'queries_learning': 105, 'queries_eq_oracle': 110, 'steps_learning': 1212, 'learning_rounds': 4, 'largest_automaton': 8, 'sul_steps': 6330}
-		Run 7/20
-			{'queries_learning': 58, 'queries_eq_oracle': 110, 'steps_learning': 506, 'learning_rounds': 4, 'largest_automaton': 8, 'sul_steps': 6411}
-		Run 8/20
-			{'queries_learning': 98, 'queries_eq_oracle': 110, 'steps_learning': 901, 'learning_rounds': 4, 'largest_automaton': 8, 'sul_steps': 6047}
-		Run 9/20
-			{'queries_learning': 87, 'queries_eq_oracle': 110, 'steps_learning': 980, 'learning_rounds': 4, 'largest_automaton': 8, 'sul_steps': 6020}
-		Run 10/20
-			{'queries_learning': 89, 'queries_eq_oracle': 110, 'steps_learning': 723, 'learning_rounds': 4, 'largest_automaton': 8, 'sul_steps': 6235}
-		Run 11/20
-			{'queries_learning': 74, 'queries_eq_oracle': 110, 'steps_learning': 801, 'learning_rounds': 4, 'largest_automaton': 8, 'sul_steps': 6299}
-		Run 12/20
-			{'queries_learning': 87, 'queries_eq_oracle': 110, 'steps_learning': 722, 'learning_rounds': 4, 'largest_automaton': 8, 'sul_steps': 6539}
-		Run 13/20
-			{'queries_learning': 120, 'queries_eq_oracle': 110, 'steps_learning': 1143, 'learning_rounds': 4, 'largest_automaton': 8, 'sul_steps': 6465}
-		Run 14/20
-			{'queries_learning': 94, 'queries_eq_oracle': 110, 'steps_learning': 906, 'learning_rounds': 4, 'largest_automaton': 8, 'sul_steps': 5964}
-		Run 15/20
-			{'queries_learning': 154, 'queries_eq_oracle': 110, 'steps_learning': 1809, 'learning_rounds': 4, 'largest_automaton': 8, 'sul_steps': 6378}
-		Run 16/20
-			{'queries_learning': 108, 'queries_eq_oracle': 110, 'steps_learning': 1142, 'learning_rounds': 4, 'largest_automaton': 8, 'sul_steps': 6023}
-		Run 17/20
-			{'queries_learning': 105, 'queries_eq_oracle': 110, 'steps_learning': 1044, 'learning_rounds': 4, 'largest_automaton': 8, 'sul_steps': 6253}
-		Run 18/20
-			{'queries_learning': 101, 'queries_eq_oracle': 110, 'steps_learning': 934, 'learning_rounds': 4, 'largest_automaton': 8, 'sul_steps': 6165}
-		Run 19/20
-			{'queries_learning': 115, 'queries_eq_oracle': 110, 'steps_learning': 1207, 'learning_rounds': 4, 'largest_automaton': 8, 'sul_steps': 5983}
-		Run 20/20
-			{'queries_learning': 112, 'queries_eq_oracle': 110, 'steps_learning': 1184, 'learning_rounds': 4, 'largest_automaton': 8, 'sul_steps': 5641}
-	 Use wbw
-		Run 1/20
-			{'queries_learning': 2252, 'queries_eq_oracle': 240, 'steps_learning': 54523, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 35762}
-		Run 2/20
-			{'queries_learning': 3003, 'queries_eq_oracle': 240, 'steps_learning': 80025, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 34914}
-		Run 3/20
-			{'queries_learning': 1284, 'queries_eq_oracle': 240, 'steps_learning': 27750, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 33675}
-		Run 4/20
-			{'queries_learning': 1927, 'queries_eq_oracle': 240, 'steps_learning': 45567, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 34613}
-		Run 5/20
-			{'queries_learning': 2126, 'queries_eq_oracle': 240, 'steps_learning': 51842, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 34463}
-		Run 6/20
-			{'queries_learning': 1719, 'queries_eq_oracle': 240, 'steps_learning': 42626, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 34671}
-		Run 7/20
-			{'queries_learning': 2269, 'queries_eq_oracle': 240, 'steps_learning': 58495, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 35997}
-		Run 8/20
-			{'queries_learning': 2075, 'queries_eq_oracle': 240, 'steps_learning': 48338, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 33979}
-		Run 9/20
-			{'queries_learning': 1291, 'queries_eq_oracle': 240, 'steps_learning': 30201, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 33732}
-		Run 10/20
-			{'queries_learning': 1919, 'queries_eq_oracle': 240, 'steps_learning': 45860, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 31828}
-		Run 11/20
-			{'queries_learning': 2053, 'queries_eq_oracle': 240, 'steps_learning': 54984, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 36543}
-		Run 12/20
-			{'queries_learning': 2196, 'queries_eq_oracle': 240, 'steps_learning': 50833, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 34591}
-		Run 13/20
-			{'queries_learning': 2507, 'queries_eq_oracle': 240, 'steps_learning': 63490, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 33700}
-		Run 14/20
-			{'queries_learning': 2211, 'queries_eq_oracle': 240, 'steps_learning': 52172, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 33422}
-		Run 15/20
-			{'queries_learning': 2153, 'queries_eq_oracle': 240, 'steps_learning': 52243, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 34164}
-		Run 16/20
-			{'queries_learning': 1914, 'queries_eq_oracle': 240, 'steps_learning': 47036, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 33692}
-		Run 17/20
-			{'queries_learning': 1686, 'queries_eq_oracle': 240, 'steps_learning': 37934, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 32713}
-		Run 18/20
-			{'queries_learning': 2164, 'queries_eq_oracle': 240, 'steps_learning': 54244, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 32784}
-		Run 19/20
-			{'queries_learning': 1355, 'queries_eq_oracle': 240, 'steps_learning': 31830, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 33860}
-		Run 20/20
-			{'queries_learning': 1992, 'queries_eq_oracle': 240, 'steps_learning': 48246, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 34339}
-	 Use mbm
-		Run 1/20
-			{'queries_learning': 689, 'queries_eq_oracle': 270, 'steps_learning': 16272, 'learning_rounds': 8, 'largest_automaton': 24, 'sul_steps': 18757}
-		Run 2/20
-			{'queries_learning': 954, 'queries_eq_oracle': 270, 'steps_learning': 23790, 'learning_rounds': 8, 'largest_automaton': 24, 'sul_steps': 19350}
-		Run 3/20
-			{'queries_learning': 862, 'queries_eq_oracle': 270, 'steps_learning': 20823, 'learning_rounds': 8, 'largest_automaton': 24, 'sul_steps': 19063}
-		Run 4/20
-			{'queries_learning': 772, 'queries_eq_oracle': 270, 'steps_learning': 17877, 'learning_rounds': 8, 'largest_automaton': 24, 'sul_steps': 18584}
-		Run 5/20
-			{'queries_learning': 688, 'queries_eq_oracle': 270, 'steps_learning': 16027, 'learning_rounds': 8, 'largest_automaton': 24, 'sul_steps': 18575}
-		Run 6/20
-			{'queries_learning': 891, 'queries_eq_oracle': 270, 'steps_learning': 21669, 'learning_rounds': 8, 'largest_automaton': 24, 'sul_steps': 18843}
-		Run 7/20
-			{'queries_learning': 826, 'queries_eq_oracle': 270, 'steps_learning': 19401, 'learning_rounds': 8, 'largest_automaton': 24, 'sul_steps': 19283}
-		Run 8/20
-			{'queries_learning': 1055, 'queries_eq_oracle': 270, 'steps_learning': 28695, 'learning_rounds': 8, 'largest_automaton': 24, 'sul_steps': 18864}
-		Run 9/20
-			{'queries_learning': 531, 'queries_eq_oracle': 270, 'steps_learning': 11255, 'learning_rounds': 8, 'largest_automaton': 24, 'sul_steps': 18171}
-		Run 10/20
-			{'queries_learning': 978, 'queries_eq_oracle': 270, 'steps_learning': 22982, 'learning_rounds': 8, 'largest_automaton': 24, 'sul_steps': 18303}
-		Run 11/20
-			{'queries_learning': 656, 'queries_eq_oracle': 270, 'steps_learning': 14674, 'learning_rounds': 8, 'largest_automaton': 24, 'sul_steps': 18494}
-		Run 12/20
-			{'queries_learning': 749, 'queries_eq_oracle': 270, 'steps_learning': 17133, 'learning_rounds': 8, 'largest_automaton': 24, 'sul_steps': 18924}
-		Run 13/20
-			{'queries_learning': 853, 'queries_eq_oracle': 270, 'steps_learning': 18952, 'learning_rounds': 8, 'largest_automaton': 24, 'sul_steps': 18517}
-		Run 14/20
-			{'queries_learning': 932, 'queries_eq_oracle': 270, 'steps_learning': 22463, 'learning_rounds': 8, 'largest_automaton': 24, 'sul_steps': 18189}
-		Run 15/20
-			{'queries_learning': 926, 'queries_eq_oracle': 270, 'steps_learning': 21604, 'learning_rounds': 8, 'largest_automaton': 24, 'sul_steps': 19002}
-		Run 16/20
-			{'queries_learning': 775, 'queries_eq_oracle': 270, 'steps_learning': 17741, 'learning_rounds': 8, 'largest_automaton': 24, 'sul_steps': 17830}
-		Run 17/20
-			{'queries_learning': 997, 'queries_eq_oracle': 270, 'steps_learning': 27986, 'learning_rounds': 8, 'largest_automaton': 24, 'sul_steps': 20014}
-		Run 18/20
-			{'queries_learning': 620, 'queries_eq_oracle': 270, 'steps_learning': 14073, 'learning_rounds': 8, 'largest_automaton': 24, 'sul_steps': 18013}
-		Run 19/20
-			{'queries_learning': 777, 'queries_eq_oracle': 270, 'steps_learning': 18109, 'learning_rounds': 8, 'largest_automaton': 24, 'sul_steps': 17383}
-		Run 20/20
-			{'queries_learning': 902, 'queries_eq_oracle': 270, 'steps_learning': 22433, 'learning_rounds': 8, 'largest_automaton': 24, 'sul_steps': 19197}
-Running IMOD(3,6,8,12,18) (9/21)
-	 Use indep
-		Run 1/20
-			{'queries_learning': 1041, 'queries_eq_oracle': 470, 'steps_learning': 26330, 'learning_rounds': 10, 'largest_automaton': 18, 'sul_steps': 30464}
-		Run 2/20
-			{'queries_learning': 879, 'queries_eq_oracle': 470, 'steps_learning': 20474, 'learning_rounds': 10, 'largest_automaton': 18, 'sul_steps': 30946}
-		Run 3/20
-			{'queries_learning': 914, 'queries_eq_oracle': 470, 'steps_learning': 20482, 'learning_rounds': 10, 'largest_automaton': 18, 'sul_steps': 31854}
-		Run 4/20
-			{'queries_learning': 965, 'queries_eq_oracle': 470, 'steps_learning': 20870, 'learning_rounds': 10, 'largest_automaton': 18, 'sul_steps': 31103}
-		Run 5/20
-			{'queries_learning': 960, 'queries_eq_oracle': 470, 'steps_learning': 22756, 'learning_rounds': 10, 'largest_automaton': 18, 'sul_steps': 31212}
-		Run 6/20
-			{'queries_learning': 626, 'queries_eq_oracle': 470, 'steps_learning': 11768, 'learning_rounds': 10, 'largest_automaton': 18, 'sul_steps': 29813}
-		Run 7/20
-			{'queries_learning': 758, 'queries_eq_oracle': 470, 'steps_learning': 15541, 'learning_rounds': 10, 'largest_automaton': 18, 'sul_steps': 30860}
-		Run 8/20
-			{'queries_learning': 919, 'queries_eq_oracle': 470, 'steps_learning': 20368, 'learning_rounds': 10, 'largest_automaton': 18, 'sul_steps': 30815}
-		Run 9/20
-			{'queries_learning': 1062, 'queries_eq_oracle': 470, 'steps_learning': 27165, 'learning_rounds': 10, 'largest_automaton': 18, 'sul_steps': 30857}
-		Run 10/20
-			{'queries_learning': 875, 'queries_eq_oracle': 470, 'steps_learning': 19022, 'learning_rounds': 10, 'largest_automaton': 18, 'sul_steps': 30443}
-		Run 11/20
-			{'queries_learning': 830, 'queries_eq_oracle': 470, 'steps_learning': 17802, 'learning_rounds': 10, 'largest_automaton': 18, 'sul_steps': 31545}
-		Run 12/20
-			{'queries_learning': 771, 'queries_eq_oracle': 470, 'steps_learning': 19379, 'learning_rounds': 10, 'largest_automaton': 18, 'sul_steps': 30948}
-		Run 13/20
-			{'queries_learning': 920, 'queries_eq_oracle': 470, 'steps_learning': 20963, 'learning_rounds': 10, 'largest_automaton': 18, 'sul_steps': 31326}
-		Run 14/20
-			{'queries_learning': 1014, 'queries_eq_oracle': 470, 'steps_learning': 25671, 'learning_rounds': 10, 'largest_automaton': 18, 'sul_steps': 29852}
-		Run 15/20
-			{'queries_learning': 1137, 'queries_eq_oracle': 470, 'steps_learning': 30297, 'learning_rounds': 10, 'largest_automaton': 18, 'sul_steps': 32731}
-		Run 16/20
-			{'queries_learning': 782, 'queries_eq_oracle': 470, 'steps_learning': 16406, 'learning_rounds': 10, 'largest_automaton': 18, 'sul_steps': 30871}
-		Run 17/20
-			{'queries_learning': 1015, 'queries_eq_oracle': 470, 'steps_learning': 24084, 'learning_rounds': 10, 'largest_automaton': 18, 'sul_steps': 31756}
-		Run 18/20
-			{'queries_learning': 739, 'queries_eq_oracle': 470, 'steps_learning': 15491, 'learning_rounds': 10, 'largest_automaton': 18, 'sul_steps': 29819}
-		Run 19/20
-			{'queries_learning': 897, 'queries_eq_oracle': 470, 'steps_learning': 17872, 'learning_rounds': 10, 'largest_automaton': 18, 'sul_steps': 30610}
-		Run 20/20
-			{'queries_learning': 1182, 'queries_eq_oracle': 470, 'steps_learning': 30146, 'learning_rounds': 10, 'largest_automaton': 18, 'sul_steps': 31683}
-	 Use wbw
-		Run 1/20
-			{'queries_learning': 4796, 'queries_eq_oracle': 240, 'steps_learning': 116362, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 89147}
-		Run 2/20
-			{'queries_learning': 6377, 'queries_eq_oracle': 240, 'steps_learning': 170064, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 87031}
-		Run 3/20
-			{'queries_learning': 2773, 'queries_eq_oracle': 240, 'steps_learning': 59868, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 83971}
-		Run 4/20
-			{'queries_learning': 4145, 'queries_eq_oracle': 240, 'steps_learning': 97760, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 86306}
-		Run 5/20
-			{'queries_learning': 4530, 'queries_eq_oracle': 240, 'steps_learning': 110379, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 85821}
-		Run 6/20
-			{'queries_learning': 3699, 'queries_eq_oracle': 240, 'steps_learning': 91403, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 86440}
-		Run 7/20
-			{'queries_learning': 4839, 'queries_eq_oracle': 240, 'steps_learning': 124813, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 89719}
-		Run 8/20
-			{'queries_learning': 4412, 'queries_eq_oracle': 240, 'steps_learning': 103006, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 84721}
-		Run 9/20
-			{'queries_learning': 2774, 'queries_eq_oracle': 240, 'steps_learning': 64751, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 84123}
-		Run 10/20
-			{'queries_learning': 4150, 'queries_eq_oracle': 240, 'steps_learning': 98826, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 79318}
-		Run 11/20
-			{'queries_learning': 4394, 'queries_eq_oracle': 240, 'steps_learning': 117342, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 90944}
-		Run 12/20
-			{'queries_learning': 4735, 'queries_eq_oracle': 240, 'steps_learning': 109339, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 86139}
-		Run 13/20
-			{'queries_learning': 5316, 'queries_eq_oracle': 240, 'steps_learning': 134686, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 83975}
-		Run 14/20
-			{'queries_learning': 4685, 'queries_eq_oracle': 240, 'steps_learning': 110880, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 83298}
-		Run 15/20
-			{'queries_learning': 4601, 'queries_eq_oracle': 240, 'steps_learning': 111563, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 85142}
-		Run 16/20
-			{'queries_learning': 4091, 'queries_eq_oracle': 240, 'steps_learning': 100315, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 83968}
-		Run 17/20
-			{'queries_learning': 3645, 'queries_eq_oracle': 240, 'steps_learning': 81890, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 81527}
-		Run 18/20
-			{'queries_learning': 4638, 'queries_eq_oracle': 240, 'steps_learning': 115783, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 81772}
-		Run 19/20
-			{'queries_learning': 2909, 'queries_eq_oracle': 240, 'steps_learning': 68096, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 84430}
-		Run 20/20
-			{'queries_learning': 4274, 'queries_eq_oracle': 240, 'steps_learning': 103415, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 85574}
-	 Use mbm
-		Run 1/20
-			{'queries_learning': 868, 'queries_eq_oracle': 780, 'steps_learning': 18888, 'learning_rounds': 20, 'largest_automaton': 24, 'sul_steps': 52539}
-		Run 2/20
-			{'queries_learning': 971, 'queries_eq_oracle': 780, 'steps_learning': 21401, 'learning_rounds': 20, 'largest_automaton': 24, 'sul_steps': 54154}
-		Run 3/20
-			{'queries_learning': 922, 'queries_eq_oracle': 780, 'steps_learning': 19202, 'learning_rounds': 20, 'largest_automaton': 24, 'sul_steps': 51612}
-		Run 4/20
-			{'queries_learning': 1060, 'queries_eq_oracle': 780, 'steps_learning': 25169, 'learning_rounds': 20, 'largest_automaton': 24, 'sul_steps': 54017}
-		Run 5/20
-			{'queries_learning': 1012, 'queries_eq_oracle': 780, 'steps_learning': 21677, 'learning_rounds': 20, 'largest_automaton': 24, 'sul_steps': 53615}
-		Run 6/20
-			{'queries_learning': 1239, 'queries_eq_oracle': 780, 'steps_learning': 28420, 'learning_rounds': 20, 'largest_automaton': 24, 'sul_steps': 53439}
-		Run 7/20
-			{'queries_learning': 1062, 'queries_eq_oracle': 780, 'steps_learning': 25230, 'learning_rounds': 20, 'largest_automaton': 24, 'sul_steps': 53758}
-		Run 8/20
-			{'queries_learning': 1192, 'queries_eq_oracle': 780, 'steps_learning': 27438, 'learning_rounds': 20, 'largest_automaton': 24, 'sul_steps': 53642}
-		Run 9/20
-			{'queries_learning': 801, 'queries_eq_oracle': 780, 'steps_learning': 17386, 'learning_rounds': 20, 'largest_automaton': 24, 'sul_steps': 52936}
-		Run 10/20
-			{'queries_learning': 1013, 'queries_eq_oracle': 780, 'steps_learning': 22494, 'learning_rounds': 20, 'largest_automaton': 24, 'sul_steps': 53068}
-		Run 11/20
-			{'queries_learning': 940, 'queries_eq_oracle': 780, 'steps_learning': 20074, 'learning_rounds': 20, 'largest_automaton': 24, 'sul_steps': 53400}
-		Run 12/20
-			{'queries_learning': 1128, 'queries_eq_oracle': 780, 'steps_learning': 25202, 'learning_rounds': 20, 'largest_automaton': 24, 'sul_steps': 54698}
-		Run 13/20
-			{'queries_learning': 1233, 'queries_eq_oracle': 780, 'steps_learning': 29609, 'learning_rounds': 20, 'largest_automaton': 24, 'sul_steps': 53111}
-		Run 14/20
-			{'queries_learning': 1166, 'queries_eq_oracle': 780, 'steps_learning': 27829, 'learning_rounds': 20, 'largest_automaton': 24, 'sul_steps': 52516}
-		Run 15/20
-			{'queries_learning': 1048, 'queries_eq_oracle': 780, 'steps_learning': 23629, 'learning_rounds': 20, 'largest_automaton': 24, 'sul_steps': 53898}
-		Run 16/20
-			{'queries_learning': 1211, 'queries_eq_oracle': 780, 'steps_learning': 29951, 'learning_rounds': 20, 'largest_automaton': 24, 'sul_steps': 53876}
-		Run 17/20
-			{'queries_learning': 937, 'queries_eq_oracle': 780, 'steps_learning': 20129, 'learning_rounds': 20, 'largest_automaton': 24, 'sul_steps': 51616}
-		Run 18/20
-			{'queries_learning': 1071, 'queries_eq_oracle': 780, 'steps_learning': 23743, 'learning_rounds': 20, 'largest_automaton': 24, 'sul_steps': 51654}
-		Run 19/20
-			{'queries_learning': 1181, 'queries_eq_oracle': 780, 'steps_learning': 27669, 'learning_rounds': 20, 'largest_automaton': 24, 'sul_steps': 51307}
-		Run 20/20
-			{'queries_learning': 1009, 'queries_eq_oracle': 780, 'steps_learning': 21523, 'learning_rounds': 20, 'largest_automaton': 24, 'sul_steps': 52357}
-Running IMOD(3,6,8,12,16,18,21) (10/21)
-	 Use indep
-		Run 1/20
-			{'queries_learning': 2168, 'queries_eq_oracle': 840, 'steps_learning': 61083, 'learning_rounds': 14, 'largest_automaton': 21, 'sul_steps': 59008}
-		Run 2/20
-			{'queries_learning': 1786, 'queries_eq_oracle': 840, 'steps_learning': 45899, 'learning_rounds': 14, 'largest_automaton': 21, 'sul_steps': 58017}
-		Run 3/20
-			{'queries_learning': 2176, 'queries_eq_oracle': 840, 'steps_learning': 57715, 'learning_rounds': 14, 'largest_automaton': 21, 'sul_steps': 59745}
-		Run 4/20
-			{'queries_learning': 2031, 'queries_eq_oracle': 840, 'steps_learning': 54429, 'learning_rounds': 14, 'largest_automaton': 21, 'sul_steps': 59104}
-		Run 5/20
-			{'queries_learning': 2125, 'queries_eq_oracle': 840, 'steps_learning': 58295, 'learning_rounds': 14, 'largest_automaton': 21, 'sul_steps': 58558}
-		Run 6/20
-			{'queries_learning': 1835, 'queries_eq_oracle': 840, 'steps_learning': 46664, 'learning_rounds': 14, 'largest_automaton': 21, 'sul_steps': 57278}
-		Run 7/20
-			{'queries_learning': 1871, 'queries_eq_oracle': 840, 'steps_learning': 46495, 'learning_rounds': 14, 'largest_automaton': 21, 'sul_steps': 58684}
-		Run 8/20
-			{'queries_learning': 2084, 'queries_eq_oracle': 840, 'steps_learning': 56052, 'learning_rounds': 14, 'largest_automaton': 21, 'sul_steps': 58511}
-		Run 9/20
-			{'queries_learning': 2091, 'queries_eq_oracle': 840, 'steps_learning': 56113, 'learning_rounds': 14, 'largest_automaton': 21, 'sul_steps': 59205}
-		Run 10/20
-			{'queries_learning': 2137, 'queries_eq_oracle': 840, 'steps_learning': 58549, 'learning_rounds': 14, 'largest_automaton': 21, 'sul_steps': 59976}
-		Run 11/20
-			{'queries_learning': 2056, 'queries_eq_oracle': 840, 'steps_learning': 54839, 'learning_rounds': 14, 'largest_automaton': 21, 'sul_steps': 59387}
-		Run 12/20
-			{'queries_learning': 1829, 'queries_eq_oracle': 840, 'steps_learning': 47238, 'learning_rounds': 14, 'largest_automaton': 21, 'sul_steps': 58843}
-		Run 13/20
-			{'queries_learning': 2302, 'queries_eq_oracle': 840, 'steps_learning': 64507, 'learning_rounds': 14, 'largest_automaton': 21, 'sul_steps': 59748}
-		Run 14/20
-			{'queries_learning': 2125, 'queries_eq_oracle': 840, 'steps_learning': 59755, 'learning_rounds': 14, 'largest_automaton': 21, 'sul_steps': 56311}
-		Run 15/20
-			{'queries_learning': 2522, 'queries_eq_oracle': 840, 'steps_learning': 76177, 'learning_rounds': 14, 'largest_automaton': 21, 'sul_steps': 62325}
-		Run 16/20
-			{'queries_learning': 1510, 'queries_eq_oracle': 840, 'steps_learning': 34074, 'learning_rounds': 14, 'largest_automaton': 21, 'sul_steps': 57122}
-		Run 17/20
-			{'queries_learning': 2031, 'queries_eq_oracle': 840, 'steps_learning': 54854, 'learning_rounds': 14, 'largest_automaton': 21, 'sul_steps': 59468}
-		Run 18/20
-			{'queries_learning': 1709, 'queries_eq_oracle': 840, 'steps_learning': 43694, 'learning_rounds': 14, 'largest_automaton': 21, 'sul_steps': 57381}
-		Run 19/20
-			{'queries_learning': 1854, 'queries_eq_oracle': 840, 'steps_learning': 45431, 'learning_rounds': 14, 'largest_automaton': 21, 'sul_steps': 58094}
-		Run 20/20
-			{'queries_learning': 2387, 'queries_eq_oracle': 840, 'steps_learning': 69980, 'learning_rounds': 14, 'largest_automaton': 21, 'sul_steps': 60051}
-	 Use wbw
-		Run 1/20
-			{'queries_learning': 6422, 'queries_eq_oracle': 240, 'steps_learning': 156064, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 124691}
-		Run 2/20
-			{'queries_learning': 8529, 'queries_eq_oracle': 240, 'steps_learning': 227760, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 121727}
-		Run 3/20
-			{'queries_learning': 3727, 'queries_eq_oracle': 240, 'steps_learning': 80490, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 117469}
-		Run 4/20
-			{'queries_learning': 5561, 'queries_eq_oracle': 240, 'steps_learning': 131142, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 120734}
-		Run 5/20
-			{'queries_learning': 6066, 'queries_eq_oracle': 240, 'steps_learning': 147903, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 119989}
-		Run 6/20
-			{'queries_learning': 4967, 'queries_eq_oracle': 240, 'steps_learning': 122711, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 120914}
-		Run 7/20
-			{'queries_learning': 6487, 'queries_eq_oracle': 240, 'steps_learning': 167457, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 125479}
-		Run 8/20
-			{'queries_learning': 5898, 'queries_eq_oracle': 240, 'steps_learning': 137894, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 118519}
-		Run 9/20
-			{'queries_learning': 3724, 'queries_eq_oracle': 240, 'steps_learning': 86927, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 117685}
-		Run 10/20
-			{'queries_learning': 5578, 'queries_eq_oracle': 240, 'steps_learning': 132834, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 110932}
-		Run 11/20
-			{'queries_learning': 5890, 'queries_eq_oracle': 240, 'steps_learning': 157270, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 127120}
-		Run 12/20
-			{'queries_learning': 6363, 'queries_eq_oracle': 240, 'steps_learning': 146979, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 120437}
-		Run 13/20
-			{'queries_learning': 7106, 'queries_eq_oracle': 240, 'steps_learning': 180212, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 117439}
-		Run 14/20
-			{'queries_learning': 6265, 'queries_eq_oracle': 240, 'steps_learning': 148540, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 116498}
-		Run 15/20
-			{'queries_learning': 6163, 'queries_eq_oracle': 240, 'steps_learning': 149565, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 119078}
-		Run 16/20
-			{'queries_learning': 5487, 'queries_eq_oracle': 240, 'steps_learning': 134503, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 117440}
-		Run 17/20
-			{'queries_learning': 4901, 'queries_eq_oracle': 240, 'steps_learning': 110174, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 114025}
-		Run 18/20
-			{'queries_learning': 6224, 'queries_eq_oracle': 240, 'steps_learning': 155287, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 114406}
-		Run 19/20
-			{'queries_learning': 3911, 'queries_eq_oracle': 240, 'steps_learning': 91454, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 118106}
-		Run 20/20
-			{'queries_learning': 5734, 'queries_eq_oracle': 240, 'steps_learning': 138813, 'learning_rounds': 6, 'largest_automaton': 24, 'sul_steps': 119682}
-	 Use mbm
-		Run 1/20
-			{'queries_learning': 1104, 'queries_eq_oracle': 1260, 'steps_learning': 23282, 'learning_rounds': 30, 'largest_automaton': 24, 'sul_steps': 85776}
-		Run 2/20
-			{'queries_learning': 1207, 'queries_eq_oracle': 1260, 'steps_learning': 25795, 'learning_rounds': 30, 'largest_automaton': 24, 'sul_steps': 86916}
-		Run 3/20
-			{'queries_learning': 1158, 'queries_eq_oracle': 1260, 'steps_learning': 23596, 'learning_rounds': 30, 'largest_automaton': 24, 'sul_steps': 84232}
-		Run 4/20
-			{'queries_learning': 1296, 'queries_eq_oracle': 1260, 'steps_learning': 29563, 'learning_rounds': 30, 'largest_automaton': 24, 'sul_steps': 85616}
-		Run 5/20
-			{'queries_learning': 1248, 'queries_eq_oracle': 1260, 'steps_learning': 26071, 'learning_rounds': 30, 'largest_automaton': 24, 'sul_steps': 87200}
-		Run 6/20
-			{'queries_learning': 1475, 'queries_eq_oracle': 1260, 'steps_learning': 32814, 'learning_rounds': 30, 'largest_automaton': 24, 'sul_steps': 87320}
-		Run 7/20
-			{'queries_learning': 1298, 'queries_eq_oracle': 1260, 'steps_learning': 29624, 'learning_rounds': 30, 'largest_automaton': 24, 'sul_steps': 85901}
-		Run 8/20
-			{'queries_learning': 1428, 'queries_eq_oracle': 1260, 'steps_learning': 31832, 'learning_rounds': 30, 'largest_automaton': 24, 'sul_steps': 85532}
-		Run 9/20
-			{'queries_learning': 1037, 'queries_eq_oracle': 1260, 'steps_learning': 21780, 'learning_rounds': 30, 'largest_automaton': 24, 'sul_steps': 85289}
-		Run 10/20
-			{'queries_learning': 1249, 'queries_eq_oracle': 1260, 'steps_learning': 26888, 'learning_rounds': 30, 'largest_automaton': 24, 'sul_steps': 85624}
-		Run 11/20
-			{'queries_learning': 1176, 'queries_eq_oracle': 1260, 'steps_learning': 24468, 'learning_rounds': 30, 'largest_automaton': 24, 'sul_steps': 87068}
-		Run 12/20
-			{'queries_learning': 1364, 'queries_eq_oracle': 1260, 'steps_learning': 29596, 'learning_rounds': 30, 'largest_automaton': 24, 'sul_steps': 87676}
-		Run 13/20
-			{'queries_learning': 1469, 'queries_eq_oracle': 1260, 'steps_learning': 34003, 'learning_rounds': 30, 'largest_automaton': 24, 'sul_steps': 86177}
-		Run 14/20
-			{'queries_learning': 1402, 'queries_eq_oracle': 1260, 'steps_learning': 32223, 'learning_rounds': 30, 'largest_automaton': 24, 'sul_steps': 85414}
-		Run 15/20
-			{'queries_learning': 1284, 'queries_eq_oracle': 1260, 'steps_learning': 28023, 'learning_rounds': 30, 'largest_automaton': 24, 'sul_steps': 84924}
-		Run 16/20
-			{'queries_learning': 1447, 'queries_eq_oracle': 1260, 'steps_learning': 34345, 'learning_rounds': 30, 'largest_automaton': 24, 'sul_steps': 87813}
-		Run 17/20
-			{'queries_learning': 1173, 'queries_eq_oracle': 1260, 'steps_learning': 24523, 'learning_rounds': 30, 'largest_automaton': 24, 'sul_steps': 84727}
-		Run 18/20
-			{'queries_learning': 1307, 'queries_eq_oracle': 1260, 'steps_learning': 28137, 'learning_rounds': 30, 'largest_automaton': 24, 'sul_steps': 84426}
-		Run 19/20
-			{'queries_learning': 1417, 'queries_eq_oracle': 1260, 'steps_learning': 32063, 'learning_rounds': 30, 'largest_automaton': 24, 'sul_steps': 83477}
-		Run 20/20
-			{'queries_learning': 1245, 'queries_eq_oracle': 1260, 'steps_learning': 25917, 'learning_rounds': 30, 'largest_automaton': 24, 'sul_steps': 84762}
-Running IMOD(8) (11/21)
+Running IMOD(8) (7/18)
 	 Use indep
 		Run 1/20
 			{'queries_learning': 47, 'queries_eq_oracle': 80, 'steps_learning': 477, 'learning_rounds': 2, 'largest_automaton': 8, 'sul_steps': 4689}
@@ -3719,7 +3223,7 @@ Running IMOD(8) (11/21)
 			{'queries_learning': 38, 'queries_eq_oracle': 80, 'steps_learning': 426, 'learning_rounds': 2, 'largest_automaton': 8, 'sul_steps': 4859}
 		Run 20/20
 			{'queries_learning': 75, 'queries_eq_oracle': 80, 'steps_learning': 820, 'learning_rounds': 2, 'largest_automaton': 8, 'sul_steps': 4572}
-Running IMOD(16,8) (12/21)
+Running IMOD(16,8) (8/18)
 	 Use indep
 		Run 1/20
 			{'queries_learning': 537, 'queries_eq_oracle': 240, 'steps_learning': 11809, 'learning_rounds': 4, 'largest_automaton': 16, 'sul_steps': 15993}
@@ -3843,7 +3347,7 @@ Running IMOD(16,8) (12/21)
 			{'queries_learning': 385, 'queries_eq_oracle': 240, 'steps_learning': 8172, 'learning_rounds': 4, 'largest_automaton': 16, 'sul_steps': 16415}
 		Run 20/20
 			{'queries_learning': 454, 'queries_eq_oracle': 240, 'steps_learning': 10948, 'learning_rounds': 4, 'largest_automaton': 16, 'sul_steps': 16303}
-Running IMOD(8,16) (13/21)
+Running IMOD(8,16) (9/18)
 	 Use indep
 		Run 1/20
 			{'queries_learning': 441, 'queries_eq_oracle': 240, 'steps_learning': 10620, 'learning_rounds': 4, 'largest_automaton': 16, 'sul_steps': 17240}
@@ -3967,7 +3471,7 @@ Running IMOD(8,16) (13/21)
 			{'queries_learning': 63, 'queries_eq_oracle': 160, 'steps_learning': 629, 'learning_rounds': 4, 'largest_automaton': 8, 'sul_steps': 9025}
 		Run 20/20
 			{'queries_learning': 100, 'queries_eq_oracle': 160, 'steps_learning': 1023, 'learning_rounds': 4, 'largest_automaton': 8, 'sul_steps': 9312}
-Running IMOD(32,24,16,8) (14/21)
+Running IMOD(32,24,16,8) (10/18)
 	 Use indep
 		Run 1/20
 			{'queries_learning': 3744, 'queries_eq_oracle': 800, 'steps_learning': 163133, 'learning_rounds': 8, 'largest_automaton': 32, 'sul_steps': 70307}
@@ -4091,7 +3595,7 @@ Running IMOD(32,24,16,8) (14/21)
 			{'queries_learning': 5682, 'queries_eq_oracle': 1840, 'steps_learning': 337232, 'learning_rounds': 12, 'largest_automaton': 96, 'sul_steps': 198177}
 		Run 20/20
 			{'queries_learning': 5020, 'queries_eq_oracle': 1840, 'steps_learning': 317476, 'learning_rounds': 12, 'largest_automaton': 96, 'sul_steps': 200178}
-Running IMOD(8,16,24,32) (15/21)
+Running IMOD(8,16,24,32) (11/18)
 	 Use indep
 		Run 1/20
 			{'queries_learning': 3532, 'queries_eq_oracle': 800, 'steps_learning': 156897, 'learning_rounds': 8, 'largest_automaton': 32, 'sul_steps': 69273}
@@ -4215,7 +3719,131 @@ Running IMOD(8,16,24,32) (15/21)
 			{'queries_learning': 113, 'queries_eq_oracle': 320, 'steps_learning': 1035, 'learning_rounds': 8, 'largest_automaton': 8, 'sul_steps': 18093}
 		Run 20/20
 			{'queries_learning': 150, 'queries_eq_oracle': 320, 'steps_learning': 1429, 'learning_rounds': 8, 'largest_automaton': 8, 'sul_steps': 19074}
-Running IMOD(8,4,2) (16/21)
+Running IMOD(2) (12/18)
+	 Use indep
+		Run 1/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 935}
+		Run 2/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1103}
+		Run 3/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1230}
+		Run 4/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1207}
+		Run 5/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 953}
+		Run 6/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1133}
+		Run 7/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1097}
+		Run 8/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 977}
+		Run 9/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1006}
+		Run 10/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1101}
+		Run 11/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 932}
+		Run 12/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1009}
+		Run 13/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 860}
+		Run 14/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1034}
+		Run 15/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 995}
+		Run 16/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 997}
+		Run 17/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1079}
+		Run 18/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 963}
+		Run 19/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1101}
+		Run 20/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1174}
+	 Use wbw
+		Run 1/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 935}
+		Run 2/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1103}
+		Run 3/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1230}
+		Run 4/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1207}
+		Run 5/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 953}
+		Run 6/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1133}
+		Run 7/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1097}
+		Run 8/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 977}
+		Run 9/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1006}
+		Run 10/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1101}
+		Run 11/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 932}
+		Run 12/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1009}
+		Run 13/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 860}
+		Run 14/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1034}
+		Run 15/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 995}
+		Run 16/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 997}
+		Run 17/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1079}
+		Run 18/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 963}
+		Run 19/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1101}
+		Run 20/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1174}
+	 Use mbm
+		Run 1/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 935}
+		Run 2/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1103}
+		Run 3/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1230}
+		Run 4/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1207}
+		Run 5/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 953}
+		Run 6/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1133}
+		Run 7/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1097}
+		Run 8/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 977}
+		Run 9/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1006}
+		Run 10/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1101}
+		Run 11/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 932}
+		Run 12/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1009}
+		Run 13/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 860}
+		Run 14/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1034}
+		Run 15/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 995}
+		Run 16/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 997}
+		Run 17/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1079}
+		Run 18/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 963}
+		Run 19/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1101}
+		Run 20/20
+			{'queries_learning': 5, 'queries_eq_oracle': 20, 'steps_learning': 6, 'learning_rounds': 1, 'largest_automaton': 2, 'sul_steps': 1174}
+Running IMOD(8,4,2) (13/18)
 	 Use indep
 		Run 1/20
 			{'queries_learning': 70, 'queries_eq_oracle': 140, 'steps_learning': 557, 'learning_rounds': 5, 'largest_automaton': 8, 'sul_steps': 7783}
@@ -4339,7 +3967,7 @@ Running IMOD(8,4,2) (16/21)
 			{'queries_learning': 54, 'queries_eq_oracle': 140, 'steps_learning': 508, 'learning_rounds': 5, 'largest_automaton': 8, 'sul_steps': 7825}
 		Run 20/20
 			{'queries_learning': 91, 'queries_eq_oracle': 140, 'steps_learning': 902, 'learning_rounds': 5, 'largest_automaton': 8, 'sul_steps': 7594}
-Running IMOD(2,4,8) (17/21)
+Running IMOD(2,4,8) (14/18)
 	 Use indep
 		Run 1/20
 			{'queries_learning': 146, 'queries_eq_oracle': 140, 'steps_learning': 1987, 'learning_rounds': 5, 'largest_automaton': 8, 'sul_steps': 7793}
@@ -4463,7 +4091,7 @@ Running IMOD(2,4,8) (17/21)
 			{'queries_learning': 9, 'queries_eq_oracle': 60, 'steps_learning': 12, 'learning_rounds': 3, 'largest_automaton': 2, 'sul_steps': 3060}
 		Run 20/20
 			{'queries_learning': 9, 'queries_eq_oracle': 60, 'steps_learning': 12, 'learning_rounds': 3, 'largest_automaton': 2, 'sul_steps': 3271}
-Running IMOD(32,16,8,4,2) (18/21)
+Running IMOD(32,16,8,4,2) (15/18)
 	 Use indep
 		Run 1/20
 			{'queries_learning': 2544, 'queries_eq_oracle': 620, 'steps_learning': 113943, 'learning_rounds': 9, 'largest_automaton': 32, 'sul_steps': 51451}
@@ -4587,7 +4215,7 @@ Running IMOD(32,16,8,4,2) (18/21)
 			{'queries_learning': 1744, 'queries_eq_oracle': 620, 'steps_learning': 78409, 'learning_rounds': 9, 'largest_automaton': 32, 'sul_steps': 48162}
 		Run 20/20
 			{'queries_learning': 1810, 'queries_eq_oracle': 620, 'steps_learning': 83190, 'learning_rounds': 9, 'largest_automaton': 32, 'sul_steps': 49436}
-Running IMOD(2,4,8,16,32) (19/21)
+Running IMOD(2,4,8,16,32) (16/18)
 	 Use indep
 		Run 1/20
 			{'queries_learning': 2785, 'queries_eq_oracle': 620, 'steps_learning': 138069, 'learning_rounds': 9, 'largest_automaton': 32, 'sul_steps': 52466}
@@ -4711,7 +4339,7 @@ Running IMOD(2,4,8,16,32) (19/21)
 			{'queries_learning': 13, 'queries_eq_oracle': 100, 'steps_learning': 18, 'learning_rounds': 5, 'largest_automaton': 2, 'sul_steps': 4755}
 		Run 20/20
 			{'queries_learning': 13, 'queries_eq_oracle': 100, 'steps_learning': 18, 'learning_rounds': 5, 'largest_automaton': 2, 'sul_steps': 5082}
-Running IMOD(2,10,20) (20/21)
+Running IMOD(2,10,20) (17/18)
 	 Use indep
 		Run 1/20
 			{'queries_learning': 676, 'queries_eq_oracle': 320, 'steps_learning': 17222, 'learning_rounds': 5, 'largest_automaton': 20, 'sul_steps': 21366}
@@ -4835,7 +4463,7 @@ Running IMOD(2,10,20) (20/21)
 			{'queries_learning': 9, 'queries_eq_oracle': 60, 'steps_learning': 12, 'learning_rounds': 3, 'largest_automaton': 2, 'sul_steps': 3060}
 		Run 20/20
 			{'queries_learning': 9, 'queries_eq_oracle': 60, 'steps_learning': 12, 'learning_rounds': 3, 'largest_automaton': 2, 'sul_steps': 3271}
-Running IMOD(20,10,2) (21/21)
+Running IMOD(20,10,2) (18/18)
 	 Use indep
 		Run 1/20
 			{'queries_learning': 881, 'queries_eq_oracle': 320, 'steps_learning': 23933, 'learning_rounds': 5, 'largest_automaton': 20, 'sul_steps': 21535}
